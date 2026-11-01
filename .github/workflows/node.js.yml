@@ -2,7 +2,6 @@ name: Aurheim AFK 24H
 on:
   workflow_dispatch:
 jobs:
-  build:
   bot:
     runs-on: ubuntu-latest
     steps:
@@ -12,4 +11,3 @@ jobs:
           node-version: '20'
       - run: npm install
       - run: node bot.js
-      
