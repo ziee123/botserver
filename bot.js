@@ -1,8 +1,8 @@
 const mineflayer = require('mineflayer')
 
 const CONFIG = {
-  host: 'acorezero.qzz.io',
-  port: 20055,
+  host: 'play.aurheimsmp.my.id',
+  port: 25565,
   username: 'ZeroxAFK',
   version: false, // biar auto ngikutin versi server lu
 }
