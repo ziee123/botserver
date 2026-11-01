@@ -1,13 +1,10 @@
 name: Aurheim AFK 24H
 on:
-  schedule:
-    - cron: '0 */5 * * *'
   workflow_dispatch:
 
 jobs:
   bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
