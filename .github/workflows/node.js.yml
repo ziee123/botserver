@@ -2,7 +2,7 @@ name: Aurheim AFK 24H
 on:
   workflow_dispatch:
 jobs:
-  bot:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
