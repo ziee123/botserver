@@ -2,7 +2,10 @@
   "name": "bot-aurheim",
   "version": "1.0.0",
   "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
   "dependencies": {
-    "mineflayer": "^4.24.0"
+    "mineflayer": "^4.25.0"
   }
 }
