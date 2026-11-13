@@ -4,7 +4,7 @@ const CONFIG = {
   host: 'play.aurheimsmp.my.id',
   port: 25565,
   username: 'ZeroxAFK',
-  version: 1.21.11,
+  version: '1.21.11',
   auth: 'offline'
 }
 
