@@ -1,11 +1,10 @@
 {
-  "name": "bot-aurheim",
+  "name": "botserver",
   "version": "1.0.0",
   "main": "bot.js",
-  "scripts": {
-    "start": "node bot.js"
-  },
   "dependencies": {
-    "mineflayer": "^4.25.0"
+    "mineflayer": "latest",
+    "minecraft-data": "latest",
+    "minecraft-protocol": "latest"
   }
 }
