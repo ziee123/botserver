@@ -16,3 +16,5 @@ Kalo mau manual di HP/PC:
 ```bash
 npm install
 node bot.js
+
+UDAH YAA SEMOGA SUKAA
