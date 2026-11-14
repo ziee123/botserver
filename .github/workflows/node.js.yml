@@ -4,16 +4,28 @@ on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
+  schedule:
+    - cron: '0 */5 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js 20
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20
-    - run: npm install
-    - run: node bot.js
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install latest bot
+        run: |
+          npm install mineflayer@latest --force
+          npm install
+      - name: Run bot with loop
+        run: |
+          while true; do
+            node bot.js
+            echo "Bot mati, restart 10 detik..."
+            sleep 10
+          done
